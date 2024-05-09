@@ -1,18 +1,17 @@
-﻿namespace TeaProduction.Infrastructure.Entities
+﻿namespace TeaProduction.Infrastructure.Entities;
+
+public class HerbalTea : Tea
 {
-    internal class HerbalTea : Tea
+    public List<string> Ingredients { get; set; }
+    public string HealthBenefits { get; set; }
+    public string FlavorProfile { get; set; }
+    public override string GetDescription()
     {
-        public List<string> Ingredients { get; set; }
-        public string HealthBenefits { get; set; }
-        public string FlavorProfile { get; set; }
-        public override string GetDescription()
-        {
-            return $"Name: {Name}," +
-                $" Type: {Type}," +
-                $" Price: {Price}," +
-                $"Ingredients count : {Ingredients.Capacity}," +
-                $"Health benefits: {HealthBenefits}," +
-                $"Flavor profile: {FlavorProfile}";
-        }
+        return $"Name: {Name}," +
+            $" Type: {Type}," +
+            $" Price: {Price}," +
+            $"Ingredients count : {Ingredients.Capacity}," +
+            $"Health benefits: {HealthBenefits}," +
+            $"Flavor profile: {FlavorProfile}";
     }
 }
