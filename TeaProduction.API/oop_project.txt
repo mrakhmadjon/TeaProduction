@@ -1,0 +1,58 @@
+Akhmadjon Sirojiddinov
+
+TOPIC : Tea
+I am planning to create a project that is mainly about Producing different types of Teas and selling to the customers. There are many different factories that 
+produces teas.So I am going to automate this factories with my project. Of course project may not include all the scenarios 
+that factories have but I will include Opp concepts.
+
+MODELS :
+There will be one BaseClass -> Bevarage that has name, price, and quantity fields in it.
+There will also be my other models like GreenTea, BlackTea, OolongTea, and HerbalTea which implements the BaseClass.
+Each this class will have their own specific fields also like flavor , content , origin_country
+
+SERVICES :
+There will be either Abstract class or Interface(actually Interface is also a way to implement abstraction in OOP).
+
+Abstract class will have methods that many/all factories will implement Like
+Produce(int TeaCount) (this method is run by ADMIN who has admin role in the program,
+
+PackageTea() -> There will be 2 or more methods for Packaging :
+For example . Package(int TeaCount) that package all the teas into Fixed -predefined boxes, 
+Package(int TeaCount, int BoxCount) thak package all the teas into given amount of boxes . So here is Encapsulation concept is used, having more form with the same name of method. 
+
+Order(int TeaCount,string email, string address ) (this is for user/ customer) (when there is enough tea in the store , it is delivered and 
+an email is sent to the customer telling that your order is on the way. Payment is done when the order is delivered by cash)
+
+Info() -> there will be info about the tea(price,content,flavor)
+
+
+
+FACTORY Design Pattern or Factory Method:
+
+As All/many factories work probably the same , i am going to use Factory design pattern, All factories implement AbstractServiceClass
+and in each Tea Factory , class behaves differently.
+
+
+GIT:
+All changes will be committed into github, i will try to work with branches and issues and pull requests.
+
+
+TESTING:
+
+I will write unit test for my services.
+
+There will be ONE default ADMIN user in the system registered!
+I am also planning to register a user/customer. There might be register/login services so that user can enter the program with token !
+It is not All, i will try to add some feature as i go . Some great ideas may come while i am in the project.
+Basically I will try to include All opp concepts , write unit test, work with git and implement design pattern and so on.
+
+ 
+
+
+
+
+
+
+
+
+
