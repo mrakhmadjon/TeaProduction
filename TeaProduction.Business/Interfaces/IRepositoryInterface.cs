@@ -6,6 +6,7 @@ namespace TeaProduction.Business.Interfaces
     public interface IRepositoryInterface<T> where T : class
     {
         DbSet<T> EntitySet { get; }
+        T Add(T entity);
         Task<T> AddAsync(T entity);
         Task AddRangeAsync(IEnumerable<T> entities);
         Task UpdateAsync(T entity);

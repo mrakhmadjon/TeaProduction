@@ -16,6 +16,12 @@ namespace TeaProduction.Business.Services
 
         public DbSet<T> EntitySet { get => teaProductionDbContext.Set<T>(); }
 
+        public T Add(T entity)
+        {
+            teaProductionDbContext.Set<T>().Add(entity);
+            teaProductionDbContext.SaveChanges();
+            return entity;
+        }
         public async Task<T> AddAsync(T entity)
         {
             await teaProductionDbContext.Set<T>().AddAsync(entity);
@@ -147,6 +153,7 @@ namespace TeaProduction.Business.Services
 
             return orderBy(query);
         }
+
 
     }
 }

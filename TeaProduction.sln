@@ -3,11 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaProduction.API", "TeaProduction.API\TeaProduction.API.csproj", "{880CBC50-D1BD-4417-A8D9-E3DE1B1744D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeaProduction.API", "TeaProduction.API\TeaProduction.API.csproj", "{880CBC50-D1BD-4417-A8D9-E3DE1B1744D8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68332C77-3FD6-487B-B7E4-08B77627231C} = {68332C77-3FD6-487B-B7E4-08B77627231C}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaProduction.Infrastructure", "TeaProduction.Infrastructure\TeaProduction.Infrastructure.csproj", "{A1CD3742-4321-41EB-9B10-0DC2267575FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeaProduction.Infrastructure", "TeaProduction.Infrastructure\TeaProduction.Infrastructure.csproj", "{A1CD3742-4321-41EB-9B10-0DC2267575FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaProduction.Business", "TeaProduction.Business\TeaProduction.Business.csproj", "{68332C77-3FD6-487B-B7E4-08B77627231C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeaProduction.Business", "TeaProduction.Business\TeaProduction.Business.csproj", "{68332C77-3FD6-487B-B7E4-08B77627231C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
