@@ -1,4 +1,6 @@
-﻿namespace TeaProduction.Infrastructure.Entities
+﻿using TeaProduction.Infrastructure.Enums;
+
+namespace TeaProduction.Infrastructure.Entities
 {
     public class User
     {

@@ -12,8 +12,10 @@ var emailConfig = builder.Configuration
 
 builder.Services.AddSingleton(emailConfig);
 
-builder.Services.AddScoped<IEmailInterface,EmailService>();
-builder.Services.AddScoped<ILoggerInterface,LoggerService>();
+builder.Services.AddScoped<IEmailInterface, EmailService>();
+builder.Services.AddScoped<ILoggerInterface, LoggerService>();
+builder.Services.AddScoped<IBlackTeaInterface, BlackTeaService>();
+builder.Services.AddTransient(typeof(IRepositoryInterface<>), typeof(RepositoryService<>));
 
 
 builder.Services.AddControllers();

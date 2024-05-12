@@ -1,7 +1,7 @@
-﻿using MailKit.Net.Smtp;
-using MimeKit;
-using TeaProduction.Business.Interfaces;
+﻿using MimeKit;
+using MailKit.Net.Smtp;
 using TeaProduction.Business.Models;
+using TeaProduction.Business.Interfaces;
 
 namespace TeaProduction.Business.Services
 {
@@ -77,8 +77,6 @@ namespace TeaProduction.Business.Services
                 finally
                 {
                     loggerInterface.Log("Email Successfully send", Enums.LogLevel.Information);
-                    client.Disconnect(true);
-                    client.Dispose();
                 }
             }
         }
@@ -102,9 +100,6 @@ namespace TeaProduction.Business.Services
                 finally
                 {
                     loggerInterface.Log("Email Successfully send", Enums.LogLevel.Information);
-                    await client.DisconnectAsync(true);
-                    client.Dispose();
-
                 }
             }
         }

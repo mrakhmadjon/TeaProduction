@@ -1,4 +1,4 @@
-﻿namespace TeaProduction.Infrastructure.Entities
+﻿namespace TeaProduction.Infrastructure.Enums
 {
     public enum Role
     {
