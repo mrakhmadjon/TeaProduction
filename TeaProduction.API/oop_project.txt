@@ -1,4 +1,25 @@
 Akhmadjon Sirojiddinov
+!!! UPDATED  16.05.2024
+Though I included much thing in my old thesis , i did not implement old the things i have mentioned. 
+But I implemented polymorphic behaviour .
+Look through Repository Service and Logger Service.
+I used xUnitTest template to test my controller.
+Throughtout the project i used git commands and uploaded my project to Github !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 TOPIC : Tea
 I am planning to create a project that is mainly about Producing different types of Teas and selling to the customers. There are many different factories that 
