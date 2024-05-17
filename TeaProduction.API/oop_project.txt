@@ -1,16 +1,28 @@
 Akhmadjon Sirojiddinov
+
+!!! Updated 18.05.2024
+
+In the Repository and Logger service There are methods with the same names but different parameters.
+These methods are being overloaded with different parameters. I meant Method overloading which is a part of 
+Polymorphism. 
+
+Now i have created some classes that are polymorphic.
+I have LoggerAbstract class which has virtual method called Log(string message)
+I have also ErrorLogger WarningLogger InformationLogger classes which inherited from LoggerAbstract 
+and override the Log(string message) method . It is Polymorphic because Log(string message) method is behaving 
+different in each class.
+
+I did not method about GetDescription() method in my topic description before sorry. 
+
+
+
+
 !!! UPDATED  16.05.2024
 Though I included much thing in my old thesis , i did not implement old the things i have mentioned. 
 But I implemented polymorphic behaviour .
 Look through Repository Service and Logger Service.
 I used xUnitTest template to test my controller.
 Throughtout the project i used git commands and uploaded my project to Github !
-
-
-
-
-
-
 
 
 
