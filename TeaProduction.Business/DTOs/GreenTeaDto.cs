@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TeaProduction.Business.DTOs
 {
-    internal class GreenTeaDto : TeaBaseDto
+    public class GreenTeaDto : TeaBaseDto
     {
         public double AntioxidantLevel { get; set; }
         public string LeafGrade { get; set; }

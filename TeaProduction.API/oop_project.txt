@@ -1,4 +1,16 @@
 Akhmadjon Sirojiddinov
+!!! UPDATED 18.05.2024 13:00
+
+I have created TeaFactoryAbstract class which has 4 virtual methods
+GetTeaForReview -> it give sample result for the specific tea model 
+GetTheLocationOfTeaFactory -> It return the location of tea factory
+GetSpecialPropertiesOfTea -> It returns special properties of tea model
+Produce -> It produces tea according to the class which inherits and override this method
+
+I have also BlackTeaFactory GreenTeaFactory HerbalTeaFactory which inherit from TeaFactory and 
+override the 4 mentioned methods and behave differently.
+
+
 
 !!! Updated 18.05.2024
 
